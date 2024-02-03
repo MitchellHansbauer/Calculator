@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <Grid x:Name="CalculatorLayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="Calc" Text="" Grid.Row="0" Grid.Column="0" FontSize="25" TextColor="DarkGray" MaxLines="1"/>
+        <Label x:Name="Result" Text="0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" HorizontalOptions="End" FontSize="50" MaxLines="1"/>
+        <Button Clicked="OnAC" Text="AC" Grid.Row="1" Grid.Column="0" BackgroundColor="Lavender"/>
+        <Button Clicked="OnSwitch" Text="+/-" Grid.Row="1" Grid.Column="1" BackgroundColor="Lavender"/>
+        <Button Clicked="OnPercent" Text="%" Grid.Row="1" Grid.Column="2" BackgroundColor="Lavender"/>
+        <Button Clicked="OnOp" Text="/" Grid.Row="1" Grid.Column="3" BackgroundColor="Coral"/>
+        <Button Clicked="OnNum" Text="7" Grid.Row="2" Grid.Column="0"/>
+        <Button Clicked="OnNum" Text="8" Grid.Row="2" Grid.Column="1"/>
+        <Button Clicked="OnNum" Text="9" Grid.Row="2" Grid.Column="2"/>
+        <Button Clicked="OnOp" Text="X" Grid.Row="2" Grid.Column="3" BackgroundColor="Coral"/>
+        <Button Clicked="OnNum" Text="4" Grid.Row="3" Grid.Column="0"/>
+        <Button Clicked="OnNum" Text="5" Grid.Row="3" Grid.Column="1"/>
+        <Button Clicked="OnNum" Text="6" Grid.Row="3" Grid.Column="2"/>
+        <Button Clicked="OnOp" Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="Coral"/>
+        <Button Clicked="OnNum" Text="1" Grid.Row="4" Grid.Column="0"/>
+        <Button Clicked="OnNum" Text="2" Grid.Row="4" Grid.Column="1"/>
+        <Button Clicked="OnNum" Text="3" Grid.Row="4" Grid.Column="2"/>
+        <Button Clicked="OnOp" Text="+" Grid.Row="4" Grid.Column="3" BackgroundColor="Coral"/>
+        <Button Clicked="OnNum" Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Button Clicked="OnPoint" Text="." Grid.Row="5" Grid.Column="2"/>
+        <Button Clicked="OnEqual" Text="=" Grid.Row="5" Grid.Column="3" BackgroundColor="Coral"/>
+    </Grid>
+
+</ContentPage>
